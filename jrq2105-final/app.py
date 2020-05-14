@@ -1,21 +1,43 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
+##########################
+# Name: Jerry Qu
+# UNI: jrq2105
+#
+# File uses Flask to create a server that allows user to use a simple website.
+# There are three routes to three different pages of the website.
+##########################
 
-@author: etill
-"""
-
-#import statements
+# import statements
 from flask import Flask, render_template
 
-#Flask app variable
+
+# Flask app variable
 app = Flask(__name__)
 
-#static route
-@app.route("/1006")
-def hello():
-    return render_template("index.html");
 
-#start the server
+# route for homepage
+@app.route("/")
+def load_home_page():
+    ''' This loads the home page (see home.html) '''
+    
+    return render_template("home.html");
+
+
+# route for hobbies page
+@app.route("/hobbies")
+def load_hobbies_page():
+    ''' This loads the hobbies page (see hobbies.html) '''
+    
+    return render_template("hobbies.html");
+    
+
+# route for puzzles page
+@app.route("/puzzles")
+def load_puzzles_page():
+    ''' This loads the puzzles page (see puzzles.html) '''
+    
+    return render_template("puzzles.html");
+
+
+# start the server
 if __name__ == "__main__":
     app.run()
