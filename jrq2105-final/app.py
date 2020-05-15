@@ -7,11 +7,11 @@
 ##########################
 
 # import statements
-from flask import Flask, render_template
+from flask import Flask, render_template;
 
 
 # Flask app variable
-app = Flask(__name__)
+app = Flask(__name__);
 
 
 # route for homepage
@@ -38,6 +38,14 @@ def load_puzzles_page():
     return render_template("puzzles.html");
 
 
+# route for easter egg page
+@app.route("/easter_egg")
+def load_easter_egg_page():
+    ''' This loads the easter egg page (see easter_egg.html) '''
+    
+    return render_template("easter_egg.html");
+
+
 # start the server
 if __name__ == "__main__":
-    app.run()
+    app.run();
