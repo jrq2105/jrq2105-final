@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+    <head>
+    
+        <!-- title of page -->
+        <title>Two Truths and a Lie</title>
+    
+    </head>
+    
+    
+    <body>
+    
+        <h1>Two Truths and a Lie</h1>
+        
+        <!-- explanation of game -->
+        <p>
+            Two truths and a lie game with random facts about me (accurate as
+            of the time I'm writing this). For each set of three statements,
+            two of them are true and one of them is a lie (except for the bonus
+            question). See if you guess the lies correctly by clicking the
+            "reveal lie" buttons.
+        </p>
+        
+        <!-- each div section is a set of questions -->
+        <div style = "background-color: black; color: white; padding: 10px">
+            <p>A: I've eaten a whole ghost pepper before.</p>
+            <p>B: I've eaten escargot before.</p>
+            <p>C: I've eaten haggis before.</p>
+            
+            <!-- reveal answer when button is pressed -->
+            <p>
+                <button type = "button" onclick = "alert('C is the lie!')">
+                    Reveal Lie
+                </button>
+            </p>
+        </div>
+        
+        <div style = "background-color: white; color: black; padding: 10px">
+            <p>A: I've never been stung by a bee.</p>
+            <p>B: I've never gotten food poisoning.</p>
+            <p>C: I've never broken a bone.</p>
+            <p>
+                <button type = "button" onclick = "alert('B is the lie!')">
+                    Reveal Lie
+                </button>
+            </p>
+        </div>
+        
+        <div style = "background-color: black; color: white; padding: 10px">
+            <p>A: I've been pooped on by a bird.</p>
+            <p>B: I am trilingual.</p>
+            <p>C: I think the food at Taco Bell tastes good.</p>
+            <p>
+                <button type = "button" onclick = "alert('B is the lie!')")>
+                    Reveal Lie
+                </button>
+            </p>
+        </div>
+        
+        <div style = "background-color: white; color: black; padding: 10px">
+            <p>
+                BONUS: This time, there are two truths and two lies, and these are not
+                random facts about me. Which statement MUST be a lie?.
+            </p>
+            <p>A: Statements B and C are either true and false, respectively, or false and true, respectively.</p>
+            <p>B: Statement A and Statement C are both true if this statement is a lie.</p>
+            <p>C: This is a true statement.</p>
+            <p>D: This statement and Statement B are either both true or both lies.</p>
+            <p>
+                <button type = "button" onclick = "alert('D MUST be a lie. The other lie is either A or C.')")>
+                    Reveal Answer
+                </button>
+            </p>
+    
+    </body>
+
+
+    <footer>
+    
+        <!-- extra info and link to home page -->
+        <h6>
+    
+            <a href = "/">Go back to my home page</a>
+    
+            <p>This website is for the Columbia ENGI 1006 Final Assignment</p>
+        
+        </h6>
+        
+    </footer>
+    
+    
+</html>

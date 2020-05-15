@@ -30,12 +30,13 @@ def load_hobbies_page():
     return render_template("hobbies.html");
     
 
-# route for puzzles page
-@app.route("/puzzles")
+# route for 'two truths and a lie' game page
+@app.route("/random_facts_game")
 def load_puzzles_page():
-    ''' This loads the puzzles page (see puzzles.html) '''
+    ''' This loads the 'two truths and a lie' game page
+    (see random_facts_game.html) '''
     
-    return render_template("puzzles.html");
+    return render_template("random_facts_game.html");
 
 
 # route for easter egg page
